@@ -9,7 +9,7 @@ def custom_titled_filter(title):
     return Wrapper
     
     
-  class MyAdmin(admin.ModelAdmin):
+class MyAdmin(admin.ModelAdmin):
 
     list_filter = (('my_field', custom_titled_filter('My custom title'))
 
